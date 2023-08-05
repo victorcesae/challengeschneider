@@ -13,4 +13,4 @@ And click In the bottom of VSCODE Watch Sass to generate css files
 
 Use any extension that you wan't to run live server of the index file
 
-## Don't change output.css file and bootstrap.bundle.min.js file
+## Don't change main.css file and bootstrap.bundle.min.js file
