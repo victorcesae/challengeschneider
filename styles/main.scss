@@ -1,0 +1,44 @@
+$white: #ffffff;
+
+$theme-colors: (
+  "light": #ffffff,
+  "dark": #000000,
+  "primary": #009530,
+  "secondary": #9fa0a4,
+  "info": #fc9c38,
+  "success": #00c018,
+  "warning": #ffca00,
+  "danger": #ff004c,
+);
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+:root,
+[data-bs-theme="light"],
+[data-bs-theme="dark"] {
+  --bs-primary: #009530;
+  --bs-primary-rgb: #009530;
+  --bs-primary-bg-subtle: #4fa600;
+  --bs-primary-border-subtle: #009530;
+  --bs-primary-text-emphasis: #009530;
+  --bs-secondary-color: #9fa0a4;
+  --bs-secondary-color-rgb: #9fa0a4;
+  --bs-secondary-bg: #626469;
+  --bs-secondary-bg-rgb: #626469;
+}
+
+body {
+  min-height: 100vh;
+}
+main {
+  height: 100vh;
+  max-height: 100vh;
+  overflow-x: auto;
+  overflow-y: hidden;
+
+  .nav-pills {
+    --bs-nav-pills-link-active-bg: var(--bs-primary);
+    & .nav-link:not(.active):hover {
+      background-color: var(--bs-gray-200);
+    }
+  }
+}
