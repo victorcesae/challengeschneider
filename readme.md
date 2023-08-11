@@ -7,7 +7,9 @@ To start the project
 ### Step 2
 
 Install this VSCODE extension to compile scss
+
 ![Alt text](image.png)
+
 And click In the bottom of VSCODE Watch Sass to generate css files
 
 ### Step 3
