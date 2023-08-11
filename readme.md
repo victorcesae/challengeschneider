@@ -1,6 +1,7 @@
 # Step 1
 
-´´´npm install´´´ or ´´´yarn´´´
+`npm install` or `yarn`
+
 To start the project
 
 # Step 2
