@@ -1,0 +1,151 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  padding-top: 40px;
+  background-color: #ccc;
+}
+@media (max-width: 768px) {
+  body {
+    padding: 20px;
+  }
+}
+
+.container {
+  max-width: 1024px;
+  width: 100%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 200px auto 200px;
+  -moz-column-gap: 56px;
+       column-gap: 56px;
+}
+@media (max-width: 768px) {
+  .container {
+    max-width: 80%;
+    display: block;
+  }
+}
+
+.sideBarContainer {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  border-radius: 15px;
+  position: sticky;
+  left: 0;
+  top: 40px;
+  background-color: #fff;
+}
+.sideBarContainer ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+}
+.sideBarContainer ul li {
+  padding: 10px 0;
+}
+.sideBarContainer a {
+  color: inherit;
+  text-decoration: none;
+}
+.sideBarContainer h4 {
+  margin-bottom: 10px;
+}
+
+.sideBar_left img {
+  width: 40px;
+  height: 40px;
+  margin-bottom: 20px;
+  border-radius: 50%;
+}
+
+.post {
+  display: flex;
+  padding: 40px 40px 0 40px;
+  background-color: #fff;
+  border-radius: 15px;
+  margin-bottom: 30px;
+}
+.post__avatar img {
+  width: 40px;
+  border-radius: 50%;
+}
+.post main {
+  padding-left: 10px;
+}
+.post main p {
+  margin-bottom: 10px;
+}
+.post main img {
+  width: 500px;
+  margin-top: 20px;
+  border-radius: 20px;
+}
+@media (max-width: 768px) {
+  .post main img {
+    max-width: 90%;
+  }
+}
+.post main ul {
+  margin-bottom: 20px;
+  margin-top: 20px;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+}
+.post__buttons {
+  width: 50%;
+}
+.post__buttons button {
+  background-color: transparent;
+  border: transparent;
+  color: #ccc;
+  cursor: pointer;
+}
+
+.publicacao {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+@media (max-width: 768px) {
+  .publicacao {
+    margin-top: 20px;
+  }
+}
+.publicacao ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+.publicacao ul li {
+  padding: 20px;
+}
+.publicacao ul .margin {
+  margin: 0 50px;
+}
+@media (max-width: 768px) {
+  .publicacao ul .margin {
+    margin: 0;
+  }
+}
+.publicacao__container {
+  padding: 20px 40px;
+}
+.publicacao__input {
+  display: grid;
+  grid-template-columns: 20px auto;
+  gap: 40px;
+}
+.publicacao__input input {
+  width: 90%;
+  padding: 15px;
+  border-radius: 20px;
+  border: 1px solid #ccc;
+}/*# sourceMappingURL=styles.css.map */
