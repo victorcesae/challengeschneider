@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responder ao Quiz</title>
+    <link rel="stylesheet" href="../styles/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body class="d-flex flex-nowrap align-items-start justify-content-start">
+    <!-- START SIDEBAR -->
+    <div class="p-3 h-100 ">
+        <div class="d-flex flex-column flex-shrink-0 p-3 bg-body-tertiary h-100 rounded" style="width: 280px;">
+            <a href="/"
+                class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
+                <span class="fs-4">Schneider</span>
+            </a>
+            <hr>
+            <ul class="nav nav-pills flex-column mb-auto">
+                <li class="nav-item">
+                    <a href="../index.html" class="nav-link link-body-emphasis">
+                        Overview
+                    </a>
+                </li>
+                <li>
+                    <a href="../pages/user_quiz.html" class="nav-link active" aria-current="page">
+                        Quiz
+                    </a>
+                </li>
+                <li>
+                    <a href="../pages/subject.html" class="nav-link link-body-emphasis">
+                        Assuntos
+                    </a>
+                </li>
+                <hr>
+                <li>
+                    <a href="#" class="nav-link link-body-emphasis">
+                        Resultados
+                    </a>
+                </li>
+                <li>
+                    <a href="../pages/quiz_manager.html" class="nav-link link-body-emphasis">
+                        Criar Quiz
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="nav-link link-body-emphasis">
+                        Criar Notificação
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="nav-link link-body-emphasis">
+                        Configurações
+                    </a>
+                </li>
+            </ul>
+            <hr>
+            <div class="dropdown">
+                <a href="#" class="d-flex align-items-center link-body-emphasis text-decoration-none dropdown-toggle"
+                    data-bs-toggle="dropdown" aria-expanded="false">
+                    <img src="https://github.com/mdo.png" alt="" width="32" height="32" class="rounded-circle me-2">
+                    <strong>John Doe</strong>
+                </a>
+                <ul class="dropdown-menu text-small shadow">
+
+                    <li><button class="dropdown-item" type="button" data-bs-toggle="modal"
+                            data-bs-target="#profile-modal">Perfil</button>
+                    </li>
+                    <li>
+                        <hr class="dropdown-divider">
+                    </li>
+                    <li><button class="dropdown-item">Sair</button></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- END SIDEBAR -->
+    <main class="d-flex flex-column w-100 h-100 gap-2 overflow-y-auto overflow-x-hidden justify-content-between p-3">
+        <!-- START CONTEÚDO DO SITE ---ALTERE APENAS AQUI--- -->
+        <div>
+            <div class="rounded bg-body-tertiary p-4">
+                <div class="row">
+                    <div class="col-md-8 offset-md-2">
+                        <div class="quiz-container">
+                            <h2 class="mb-4">Responder ao Quiz</h2>
+                            <form id="quiz-response-form">
+                                <!-- A pergunta do quiz será inserida aqui pelo JavaScript -->
+                            </form>
+                            <button type="button" class="btn mt-4" id="prev-question-btn"
+                                onclick="showPrevQuestion()">Pergunta
+                                Anterior</button>
+                            <button type="button" class="btn mt-4 ml-2" id="next-question-btn"
+                                onclick="showNextQuestion()">Próxima Pergunta</button>
+                            <button type="button" class="btn mt-4 ml-2" id="submit-quiz-btn"
+                                onclick="submitResponses()">Submeter Respostas</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal fade" id="scoreModal" tabindex="-1" aria-labelledby="scoreModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="scoreModalLabel">Resultado</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <p id="score-display"></p>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                            <a href="#suaAncoraDesignada" class="btn btn-primary">Página Inicial</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- END CONTEÚDO DO SITE-->
+        <!-- START FOOTER -->
+        <footer class="align-self-end w-100 rounded">
+            <div class="row  mb-0 mt-5 mx-4 justify-content-xl-around justify-content-sm-between">
+                <div class="col-xl-3 col-lg-6 col-md-6 col-sm-6 pt-4 order-1">
+                    <ul class="list-unstyled">
+                        <li class="mt-md-0 mt-4 list-header">LINKS RÁPIDOS</li>
+                        <li><a href="https://www.se.com/br/pt/all-products">Todos os produtos</a></li>
+                        <li><a href="https://www.se.com/br/pt/work/solutions/">Soluções</a></li>
+                        <li><a href="https://www.se.com/br/pt/work/solutions/software/">Software</a></li>
+                        <li><a href="https://www.se.com/br/pt/work/services/">+ Serviços de ciclo de vida</a></li>
+                    </ul>
+                </div>
+                <div class="col-xl-3 col-lg-4 col-md-4 col-sm-6 pt-4 order-2">
+                    <ul class="list-unstyled">
+                        <li class="mt-md-0 mt-4 list-header">QUEM SOMOS</li>
+                        <li><a href="https://www.se.com/br/pt/about-us/company-profile/">Perfil da empresa</a></li>
+                        <li><a href="https://www.se.com/br/pt/about-us/careers/overview.jsp">Carreiras</a></li>
+                        <li><a href="https://www.se.com/br/pt/about-us/newsroom/">Newsroom</a></li>
+                        <li><a href="https://www.se.com/br/pt/about-us/sustainability/">Sustentabilidade</a></li>
+                    </ul>
+                </div>
+                <div class="col-xl-auto col-lg-6  col-md-6 pt-4 col-sm-6 my-sm-0 order-md-3 order-sm-1 d-flex">
+                    <ul class="list-unstyled">
+                        <li class="mt-md-0 mt-4 list-header">SUPORTE</li>
+                        <li><a href="https://www.se.com/br/pt/work/support/">Precisa de ajuda? Comece aqui</a></li>
+                        <li><a href="https://www.se.com/br/pt/work/support/product-selector/">Seletor de Produto</a>
+                        </li>
+                        <li><a href="https://www.se.com/br/pt/download/">Documentação do produto e download de
+                                softwares</a></li>
+                        <li><a href="https://www.se.com/br/pt/faqs/home/">Pesquisar perguntas frequentes</a></li>
+
+                        <li class="mt-md-0 mt-4 list-header">CONTATO</li>
+                        <li><a class="text-decoration-none link-underline"
+                                href="https://www.se.com/br/pt/work/support/contacts.jsp">Central de
+                                contato</a></li>
+                        <li><a
+                                href="https://www.se.com/br/pt/work/support/customer-care/contact-schneider-electric.jsp">Entrar
+                                em
+                                contato com o suporte</a>
+                        </li>
+                        <li><a href="https://www.se.com/br/pt/work/support/customer-care/contact-sales.jsp">Faça um
+                                orçamento</a>
+                        </li>
+                        <li><a href="https://www.se.com/br/pt/locate/360-buscar-revendas-e-distribuidores">Onde
+                                comprar?</a></li>
+                    </ul>
+                </div>
+                <div class="col-xl-auto text-left col-lg-4 col-md-4 col-sm-6 col-12 pt-4 my-sm-0 order-6 my-auto">
+                    <ul class="list-unstyled">
+                        <li>
+                            <p class="mb-0 pb-0 mt-5">REDES SOCIAIS</p>
+                        </li>
+                        <li>
+                            <a class="fa fa-facebook"
+                                href="https://www.facebook.com/SchneiderElectric?brandloc=DISABLE"></a>
+                            <a class="fa fa-twitter" href="https://twitter.com/SchneiderElec"></a>
+                            <a class="fa fa-instagram" href="https://instagram.com/schneiderelectric"></a>
+                            <a class="fa fa-linkedin" href="https://www.linkedin.com/company/schneider-electric"></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <hr class="line">
+            <div class="row text-center py-3">
+                <div class="col">
+                    <p class="text-muted"><b>TODOS OS DIREITOS RESERVADOS</b> </p>
+                </div>
+            </div>
+        </footer>
+        <!-- END FOOTER -->
+    </main>
+
+    <div id="profile-modal" class="modal" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content wrapper bg-white p-2 rounded border">
+                <h4 class="pb-4 border-bottom">Configurações do Usuário</h4>
+                <div class="d-flex align-items-start py-3 border-bottom gap-3">
+                    <div class="pl-sm-4 pl-2" id="img-section">
+                        <b>Foto de Perfil</b>
+                        <p>Tipos de arquivo aceito ( .png, .jpeg, .jpg). Tamanho máximo de 1MB</p>
+                        <input class="d-none" type="file" name="profile" id="profile-image"
+                            accept="image/png, image/gif, image/jpeg">
+                        <label for="profile-image">
+                            <b class="btn button border">Upload</b>
+                        </label>
+                    </div>
+                </div>
+                <div class="py-2">
+                    <div class="row py-2">
+                        <div class="col-md-6">
+                            <label for="firstname">Nome</label>
+                            <input type="text" class="bg-light form-control" placeholder="Steve">
+                        </div>
+                        <div class="col-md-6 pt-md-0 pt-3">
+                            <label for="lastname">Sobrenome</label>
+                            <input type="text" class="bg-light form-control" placeholder="Smith">
+                        </div>
+                    </div>
+                    <div class="row py-2">
+                        <div class="col-md-6">
+                            <label for="email">E-mail</label>
+                            <input type="text" class="bg-light form-control" placeholder="steve_@email.com">
+                        </div>
+                        <div class="col-md-6 pt-md-0 pt-3">
+                            <label for="phone">Telefone</label>
+                            <input type="tel" class="bg-light form-control" placeholder="+1 213-548-6015">
+                        </div>
+                    </div>
+                    <div class="row py-2">
+                        <div class="col-md-6">
+                            <label for="country">País</label>
+                            <select name="country" id="country" class="bg-light">
+                                <option value="br" selected>BR</option>
+                                <option value="us">USA</option>
+                            </select>
+                        </div>
+                        <div class="col-md-6 pt-md-0 pt-3" id="lang">
+                            <label for="language">Idioma</label>
+                            <div class="arrow">
+                                <select name="language" id="language" class="bg-light">
+                                    <option value="pt-br" selected>Português</option>
+                                    <option value="en-us">English (United States)</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="py-3 pb-4">
+                        <button class="btn btn-primary mr-3" data-bs-dismiss="modal">Salvar</button>
+                        <button class="btn border button" data-bs-dismiss="modal">Cancelar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="../js/bootstrap.bundle.min.js"></script>
+    <script src="../js/quiz_response.js"></script>
+</body>
+
+</html>

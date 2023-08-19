@@ -1,18 +1,3 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-body {
-  padding-top: 40px;
-  background-color: #ccc;
-}
-@media (max-width: 768px) {
-  body {
-    padding: 20px;
-  }
-}
 body ul {
   padding-left: 0;
 }
@@ -24,7 +9,7 @@ body ul {
   display: grid;
   grid-template-columns: 200px auto 200px;
   -moz-column-gap: 56px;
-       column-gap: 56px;
+  column-gap: 56px;
 }
 @media (max-width: 768px) {
   .container {
@@ -71,7 +56,6 @@ body ul {
   padding: 40px 40px 0 40px;
   background-color: #fff;
   border-radius: 15px;
-  margin-bottom: 30px;
 }
 .post__avatar img {
   width: 40px;
@@ -149,7 +133,7 @@ body ul {
   border: 1px solid #ccc;
 }
 .publicacao__input input:hover {
-  background-color: #DDDDDD;
+  background-color: #dddddd;
   cursor: pointer;
 }
 
@@ -158,7 +142,7 @@ body ul {
 }
 
 .highlight-on-hover:hover {
-  background-color: #DDDDDD;
+  background-color: #dddddd;
   cursor: pointer;
   border-radius: 10px;
 }
@@ -170,4 +154,4 @@ body ul {
   border-radius: 50%;
   display: inline-block;
   margin-right: 5px;
-}/*# sourceMappingURL=styles.css.map */
+}
