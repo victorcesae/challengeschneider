@@ -22,7 +22,7 @@
             <hr>
             <ul class="nav nav-pills flex-column mb-auto">
                 <li class="nav-item">
-                    <a href="../index.html" class="nav-link active" aria-current="page">
+                    <a href="../index.html" class="nav-link link-body-emphasis">
                         Overview
                     </a>
                 </li>
@@ -32,7 +32,7 @@
                     </a>
                 </li>
                 <li>
-                    <a href="./subject.html" class="nav-link link-body-emphasis">
+                    <a href="./subject.html" class="nav-link active" aria-current="page">
                         Assuntos
                     </a>
                 </li>
@@ -66,19 +66,19 @@
                     <strong>John Doe</strong>
                 </a>
                 <ul class="dropdown-menu text-small shadow">
-                    <li><a class="dropdown-item" href="#">Configurações</a></li>
-                    <li><a class="dropdown-item" href="#">Perfil</a></li>
+
+                    <li><button class="dropdown-item" type="button" data-bs-toggle="modal"
+                            data-bs-target="#profile-modal">Perfil</button></li>
                     <li>
                         <hr class="dropdown-divider">
                     </li>
-                    <li><a class="dropdown-item" href="#">Sair</a></li>
+                    <li><button class="dropdown-item">Sair</button></li>
                 </ul>
             </div>
         </div>
     </div>
     <!-- END SIDEBAR -->
-    <main
-        class="d-flex flex-column w-100 h-100 gap-2 overflow-y-auto overflow-x-hidden justify-content-between p-2 pb-3 pe-3">
+    <main class="d-flex flex-column w-100 h-100 gap-2 overflow-y-auto overflow-x-hidden justify-content-between p-3">
         <!-- START CONTEÚDO DO SITE ---ALTERE APENAS AQUI--- -->
         <div class="d-flex gap-3 align-items-start justify-content-start position-relative">
             <div class="column w-100 d-flex flex-column">
@@ -113,7 +113,7 @@
                     </div>
                 </div>
                 <hr>
-                <div class="time-line d-flex flex-column gap-3">
+                <div class="time-line d-flex flex-column gap-4">
                     <div class="post">
                         <div class="post__avatar">
                             <img src="../img/95fade835161ba655bc6681455d41835.png" />
@@ -263,9 +263,8 @@
                         </div>
                     </nav>
                     <ul>
-
                         <li>
-                            <div class="card" style="width: 12rem; margin: 0;">
+                            <div class="card">
                                 <img src="../img/AdobeStock_505564014_Preview-e1661529353259.jpeg" class="card-img-top"
                                     alt="...">
                                 <div class="card-body">
@@ -273,12 +272,12 @@
                                     <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad
                                         temporibus corrupti sit accusantium esse inventore possimus aliquam eos iure ut!
                                     </p>
-                                    <a href="#" class="btn btn-primary">Acessar</a>
+                                    <a href="#" class="btn btn-primary text-decoration-none">Acessar</a>
                                 </div>
                             </div>
                         </li>
                         <li>
-                            <div class="card" style="width: 12rem; margin: 0;">
+                            <div class="card">
                                 <div class="ratio ratio-16x9">
                                     <iframe src="https://www.youtube.com/embed/IHU_ilIxDGo?controls=0"
                                         title="YouTube video player" frameborder="0"
@@ -290,13 +289,13 @@
                                     <p class="card-text">Dia Mundial do Meio Ambiente 2023 l Mensagem do
                                         secretário-geral das Nações Unidas
                                     </p>
-                                    <!-- <a href="#" class="btn btn-primary">Acessar</a> -->
+                                    <!-- <a href="#" class="btn btn-primary text-decoration-none">Acessar</a> -->
                                 </div>
                             </div>
 
                         </li>
                         <li>
-                            <div class="card" style="width: 12rem; margin: 0;">
+                            <div class="card">
                                 <img src="../img/AdobeStock_505564014_Preview-e1661529353259.jpeg" class="card-img-top"
                                     alt="...">
                                 <div class="card-body">
@@ -304,13 +303,13 @@
                                     <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad
                                         temporibus corrupti sit accusantium esse inventore possimus aliquam eos iure ut!
                                     </p>
-                                    <a href="#" class="btn btn-primary">Acessar</a>
+                                    <a href="#" class="btn btn-primary text-decoration-none">Acessar</a>
                                 </div>
                             </div>
                         </li>
                         <li>
 
-                            <div class="card" style="width: 12rem; margin: 0;">
+                            <div class="card">
                                 <img src="../img/AdobeStock_505564014_Preview-e1661529353259.jpeg" class="card-img-top"
                                     alt="...">
                                 <div class="card-body">
@@ -318,14 +317,14 @@
                                     <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad
                                         temporibus corrupti sit accusantium esse inventore possimus aliquam eos iure ut!
                                     </p>
-                                    <a href="#" class="btn btn-primary">Acessar</a>
+                                    <a href="#" class="btn btn-primary text-decoration-none">Acessar</a>
                                 </div>
                             </div>
 
                         </li>
                         <li>
 
-                            <div class="card" style="width: 12rem; margin: 0;">
+                            <div class="card">
                                 <img src="../img/AdobeStock_505564014_Preview-e1661529353259.jpeg" class="card-img-top"
                                     alt="...">
                                 <div class="card-body">
@@ -333,7 +332,7 @@
                                     <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad
                                         temporibus corrupti sit accusantium esse inventore possimus aliquam eos iure ut!
                                     </p>
-                                    <a href="#" class="btn btn-primary">Acessar</a>
+                                    <a href="#" class="btn btn-primary text-decoration-none">Acessar</a>
                                 </div>
                             </div>
                         </li>
@@ -414,6 +413,68 @@
         </footer>
         <!-- END FOOTER -->
     </main>
+    <div id="profile-modal" class="modal" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content wrapper bg-white p-2 rounded border">
+                <h4 class="pb-4 border-bottom">Configurações do Usuário</h4>
+                <div class="d-flex align-items-start py-3 border-bottom gap-3">
+                    <div class="pl-sm-4 pl-2" id="img-section">
+                        <b>Foto de Perfil</b>
+                        <p>Tipos de arquivo aceito ( .png, .jpeg, .jpg). Tamanho máximo de 1MB</p>
+                        <input class="d-none" type="file" name="profile" id="profile-image"
+                            accept="image/png, image/gif, image/jpeg">
+                        <label for="profile-image">
+                            <b class="btn button border">Upload</b>
+                        </label>
+                    </div>
+                </div>
+                <div class="py-2">
+                    <div class="row py-2">
+                        <div class="col-md-6">
+                            <label for="firstname">Nome</label>
+                            <input type="text" class="bg-light form-control" placeholder="Steve">
+                        </div>
+                        <div class="col-md-6 pt-md-0 pt-3">
+                            <label for="lastname">Sobrenome</label>
+                            <input type="text" class="bg-light form-control" placeholder="Smith">
+                        </div>
+                    </div>
+                    <div class="row py-2">
+                        <div class="col-md-6">
+                            <label for="email">E-mail</label>
+                            <input type="text" class="bg-light form-control" placeholder="steve_@email.com">
+                        </div>
+                        <div class="col-md-6 pt-md-0 pt-3">
+                            <label for="phone">Telefone</label>
+                            <input type="tel" class="bg-light form-control" placeholder="+1 213-548-6015">
+                        </div>
+                    </div>
+                    <div class="row py-2">
+                        <div class="col-md-6">
+                            <label for="country">País</label>
+                            <select name="country" id="country" class="bg-light">
+                                <option value="br" selected>BR</option>
+                                <option value="us">USA</option>
+                            </select>
+                        </div>
+                        <div class="col-md-6 pt-md-0 pt-3" id="lang">
+                            <label for="language">Idioma</label>
+                            <div class="arrow">
+                                <select name="language" id="language" class="bg-light">
+                                    <option value="pt-br" selected>Português</option>
+                                    <option value="en-us">English (United States)</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="py-3 pb-4">
+                        <button class="btn btn-primary mr-3" data-bs-dismiss="modal">Salvar</button>
+                        <button class="btn border button" data-bs-dismiss="modal">Cancelar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     <script src="../js/bootstrap.bundle.min.js"></script>
 </body>
 
