@@ -32,7 +32,7 @@
                     </a>
                 </li>
                 <li>
-                    <a href="./pages/assuntos_page.html" class="nav-link link-body-emphasis">
+                    <a href="./subject.html" class="nav-link link-body-emphasis">
                         Assuntos
                     </a>
                 </li>
@@ -78,56 +78,73 @@
     </div>
     <!-- END SIDEBAR -->
     <main
-        class="d-flex flex-column w-100 h-100 gap-2 overflow-y-auto overflow-x-hidden justify-content-between p-2 pb-3 pe-3">
+        class="d-flex flex-column w-100 h-100 gap-2 overflow-y-auto overflow-x-hidden justify-content-between p-3 pb-3 pe-3">
         <!-- START CONTEÚDO DO SITE ---ALTERE APENAS AQUI--- -->
         <div class="d-flex gap-3 align-items-start justify-content-start position-relative">
-            <div class="column w-100 d-flex flex-column gap-5">
+            <div class="column w-100 d-flex flex-column">
                 <div class="publicacao">
                     <div class="publicacao__container">
                         <div class="publicacao__input">
                             <div class="post__avatar">
                                 <img src="../img/95fade835161ba655bc6681455d41835.png" />
                             </div>
-                            <form action="">
-                                <input type="text" placeholder="Começar a publicar">
-                            </form>
+                            <div class="hstack gap-3">
+                                <input class="form-control me-auto" type="text"
+                                    placeholder="Share Insightful thought..." aria-label="Add your item here...">
+                                <button type="button" class="btn btn-secondary ">Submit</button>
+                                <!-- <div class="vr"></div>
+                                <button type="button" class="btn btn-outline-danger">Reset</button> -->
+                            </div>
                         </div>
                         <div class="publicacao__itens">
                             <ul>
-                                <li>
-                                    Midia
+                                <li class="highlight-on-hover">
+                                    <i class="fa fa-image"></i> Mídia
                                 </li>
-                                <li class="margin">
-                                    Artigo
+                                <li class="margin highlight-on-hover">
+                                    <i class="fa fa-leaf"></i> Eco-friendly
                                 </li>
-                                <li>
-                                    Evento
+                                <li class="highlight-on-hover">
+                                    <i class="fa fa-pencil-square-o" aria-hidden="true"></i>
+                                    Engaje
                                 </li>
                             </ul>
                         </div>
                     </div>
                 </div>
+                <hr>
                 <div class="time-line d-flex flex-column gap-3">
                     <div class="post">
                         <div class="post__avatar">
                             <img src="../img/95fade835161ba655bc6681455d41835.png" />
                         </div>
                         <main>
-                            <p>Esther Howard * 23s</p>
-                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Est, quasi!</p>
-                            <img src="../img/AdobeStock_505564014_Preview-e1661529353259.jpeg" alt="">
+                            <strong>Esther Howard </strong><span class="color-light text-secondary"> &#8226; 23s </span>
+                            <p class="pt-3"><small>This line of text is meant to be treated as fine print.</small></p>
+                            <img src="../img/AdobeStock_505564014_Preview-e1661529353259.jpeg" class="img-fluid"
+                                alt="...">
                             <div class="post__buttons">
                                 <ul>
-                                    <li>
-                                        <button type="button">Gostei</button>
+                                    <li><i class="bi bi-heart"></i>
+                                        <input type="checkbox" class="btn-check" id="btn-check-1" autocomplete="off">
+                                        <label class="btn btn-outline-primary" for="btn-check-1"> <i class="fa fa-heart
+                                            p-1"></i>Like</label>
+
                                     </li>
+
                                     <li>
-                                        <button type="button">Comentar</button>
-                                    </li>
-                                    <li>
-                                        <button type="button">Enviar</button>
+
+                                        <input type="checkbox" class="btn-check" id="btn-check-3" autocomplete="off">
+                                        <label class="btn btn-outline-secondary" for="btn-check-3"> <i
+                                                class="fa fa-share p-1"></i>Share</label>
                                     </li>
                                 </ul>
+                            </div>
+                            <div class="input-group mb-3">
+                                <input type="text" class="form-control" placeholder="Add comment"
+                                    aria-label="Recipient's username" aria-describedby="button-addon2">
+                                <button class="btn btn-outline-secondary" type="button"
+                                    id="button-addon2">comment</button>
                             </div>
                         </main>
                     </div>
@@ -136,21 +153,32 @@
                             <img src="../img/95fade835161ba655bc6681455d41835.png" />
                         </div>
                         <main>
-                            <p>Esther Howard * 23s</p>
-                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Est, quasi!</p>
-                            <img src="../img/AdobeStock_505564014_Preview-e1661529353259.jpeg" alt="">
+                            <strong>Esther Howard </strong><span class="color-light text-secondary"> &#8226; 23s </span>
+                            <p class="pt-3"><small>This line of text is meant to be treated as fine print.</small></p>
+                            <img src="../img/AdobeStock_505564014_Preview-e1661529353259.jpeg" class="img-fluid"
+                                alt="...">
                             <div class="post__buttons">
                                 <ul>
-                                    <li>
-                                        <button type="button">Gostei</button>
+                                    <li><i class="bi bi-heart"></i>
+                                        <input type="checkbox" class="btn-check" id="btn-check-1" autocomplete="off">
+                                        <label class="btn btn-outline-primary" for="btn-check-1"> <i class="fa fa-heart
+                                            p-1"></i>Like</label>
+
                                     </li>
+
                                     <li>
-                                        <button type="button">Comentar</button>
-                                    </li>
-                                    <li>
-                                        <button type="button">Enviar</button>
+
+                                        <input type="checkbox" class="btn-check" id="btn-check-3" autocomplete="off">
+                                        <label class="btn btn-outline-secondary" for="btn-check-3"> <i
+                                                class="fa fa-share p-1"></i>Share</label>
                                     </li>
                                 </ul>
+                            </div>
+                            <div class="input-group mb-3">
+                                <input type="text" class="form-control" placeholder="Add comment"
+                                    aria-label="Recipient's username" aria-describedby="button-addon2">
+                                <button class="btn btn-outline-secondary" type="button"
+                                    id="button-addon2">comment</button>
                             </div>
                         </main>
                     </div>
@@ -159,21 +187,66 @@
                             <img src="../img/95fade835161ba655bc6681455d41835.png" />
                         </div>
                         <main>
-                            <p>Esther Howard * 23s</p>
-                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Est, quasi!</p>
-                            <img src="../img/AdobeStock_505564014_Preview-e1661529353259.jpeg" alt="">
+                            <strong>Esther Howard </strong><span class="color-light text-secondary"> &#8226; 23s </span>
+                            <p class="pt-3"><small>This line of text is meant to be treated as fine print.</small></p>
+                            <img src="../img/AdobeStock_505564014_Preview-e1661529353259.jpeg" class="img-fluid"
+                                alt="...">
                             <div class="post__buttons">
                                 <ul>
-                                    <li>
-                                        <button type="button">Gostei</button>
+                                    <li><i class="bi bi-heart"></i>
+                                        <input type="checkbox" class="btn-check" id="btn-check-1" autocomplete="off">
+                                        <label class="btn btn-outline-primary" for="btn-check-1"> <i class="fa fa-heart
+                                            p-1"></i>Like</label>
+
                                     </li>
+
                                     <li>
-                                        <button type="button">Comentar</button>
-                                    </li>
-                                    <li>
-                                        <button type="button">Enviar</button>
+
+                                        <input type="checkbox" class="btn-check" id="btn-check-3" autocomplete="off">
+                                        <label class="btn btn-outline-secondary" for="btn-check-3"> <i
+                                                class="fa fa-share p-1"></i>Share</label>
                                     </li>
                                 </ul>
+                            </div>
+                            <div class="input-group mb-3">
+                                <input type="text" class="form-control" placeholder="Add comment"
+                                    aria-label="Recipient's username" aria-describedby="button-addon2">
+                                <button class="btn btn-outline-secondary" type="button"
+                                    id="button-addon2">comment</button>
+                            </div>
+                        </main>
+                    </div>
+                    <div class="post">
+                        <div class="post__avatar">
+                            <img src="../img/95fade835161ba655bc6681455d41835.png" />
+                        </div>
+                        <main>
+                            <strong>Esther Howard </strong><span class="color-light text-secondary"> &#8226; 23s </span>
+                            <p class="pt-3"><small>This line of text is meant to be treated as fine print.</small></p>
+                            <img src="../img/AdobeStock_505564014_Preview-e1661529353259.jpeg" class="img-fluid"
+                                alt="...">
+                            <div class="post__buttons">
+                                <ul>
+                                    <li><i class="bi bi-heart"></i>
+                                        <input type="checkbox" class="btn-check" id="btn-check-1" autocomplete="off">
+                                        <label class="btn btn-outline-primary" for="btn-check-1"> <i class="fa fa-heart
+                                            p-1"></i>Like</label>
+
+                                    </li>
+
+                                    <li>
+
+                                        <input type="checkbox" class="btn-check" id="btn-check-3" autocomplete="off">
+                                        <label class="btn btn-outline-secondary" for="btn-check-3"> <i
+                                                class="fa fa-share p-1"></i>Share</label>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="input-group mb-3">
+                                <input type="text" class="form-control" placeholder="Add comment"
+                                    aria-label="Recipient's username" aria-describedby="button-addon2">
+                                <button class="btn btn-outline-secondary" type="button"
+                                    id="button-addon2">comment</button>
                             </div>
                         </main>
                     </div>
@@ -181,31 +254,88 @@
             </div>
             <div class="column w-25 position-sticky top-0">
                 <div class="sideBarContainer">
+                    <nav class="navbar bg-body-black">
+                        <div class="container-fluid">
+                            <form class="d-flex" role="search">
+                                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                                <button class="btn btn-outline-success" type="submit">Search</button>
+                            </form>
+                        </div>
+                    </nav>
                     <ul>
+
                         <li>
-                            <h4>Sustentabilidade no dia à dia</h4>
-                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Optio quam recusandae ratione
-                                molestiae voluptas nesciunt ducimus, earum excepturi repellat dolorum, corrupti cum
-                                asperiores delectus dolor non nam magni! Quos, perspiciatis.</p>
+                            <div class="card" style="width: 12rem; margin: 0;">
+                                <img src="../img/AdobeStock_505564014_Preview-e1661529353259.jpeg" class="card-img-top"
+                                    alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Seja Sustentável</h5>
+                                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad
+                                        temporibus corrupti sit accusantium esse inventore possimus aliquam eos iure ut!
+                                    </p>
+                                    <a href="#" class="btn btn-primary">Acessar</a>
+                                </div>
+                            </div>
                         </li>
                         <li>
-                            <h4>Quiz da Semana</h4>
-                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Optio quam recusandae ratione
-                                molestiae voluptas nesciunt ducimus, earum excepturi .</p>
+                            <div class="card" style="width: 12rem; margin: 0;">
+                                <div class="ratio ratio-16x9">
+                                    <iframe src="https://www.youtube.com/embed/IHU_ilIxDGo?controls=0"
+                                        title="YouTube video player" frameborder="0"
+                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                        allowfullscreen></iframe>
+                                </div>
+                                <div class="card-body">
+
+                                    <p class="card-text">Dia Mundial do Meio Ambiente 2023 l Mensagem do
+                                        secretário-geral das Nações Unidas
+                                    </p>
+                                    <!-- <a href="#" class="btn btn-primary">Acessar</a> -->
+                                </div>
+                            </div>
+
+                        </li>
+                        <li>
+                            <div class="card" style="width: 12rem; margin: 0;">
+                                <img src="../img/AdobeStock_505564014_Preview-e1661529353259.jpeg" class="card-img-top"
+                                    alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Quiz da Semana</h5>
+                                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad
+                                        temporibus corrupti sit accusantium esse inventore possimus aliquam eos iure ut!
+                                    </p>
+                                    <a href="#" class="btn btn-primary">Acessar</a>
+                                </div>
+                            </div>
                         </li>
                         <li>
 
-                            <h4>Melhores práticas sustentáveis</h4>
-                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Optio quam recusandae ratione
-                                molestiae voluptas nesciunt ducimus, earum excepturi .</p>
+                            <div class="card" style="width: 12rem; margin: 0;">
+                                <img src="../img/AdobeStock_505564014_Preview-e1661529353259.jpeg" class="card-img-top"
+                                    alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Práticas sustentáveis</h5>
+                                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad
+                                        temporibus corrupti sit accusantium esse inventore possimus aliquam eos iure ut!
+                                    </p>
+                                    <a href="#" class="btn btn-primary">Acessar</a>
+                                </div>
+                            </div>
 
                         </li>
                         <li>
 
-                            <h4>Tema do mês</h4>
-                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Optio quam recusandae ratione
-                                molestiae voluptas nesciunt ducimus, earum excepturi .</p>
-
+                            <div class="card" style="width: 12rem; margin: 0;">
+                                <img src="../img/AdobeStock_505564014_Preview-e1661529353259.jpeg" class="card-img-top"
+                                    alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Tema so mês</h5>
+                                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad
+                                        temporibus corrupti sit accusantium esse inventore possimus aliquam eos iure ut!
+                                    </p>
+                                    <a href="#" class="btn btn-primary">Acessar</a>
+                                </div>
+                            </div>
                         </li>
                     </ul>
 
