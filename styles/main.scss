@@ -51,6 +51,7 @@ footer {
   background-color: var(--bs-secondary-bg) !important;
   color: white;
   min-height: 550px;
+  overflow: hidden;
   a:not(.fa):hover {
     text-decoration: underline !important;
   }
@@ -313,7 +314,13 @@ footer {
   background: #009e4d;
 
   /* Chrome 10-25, Safari 5.1-6 */
-  background: -webkit-linear-gradient(to right, #009e4d, #009e4d, #009e4d, #009e4d);
+  background: -webkit-linear-gradient(
+    to right,
+    #009e4d,
+    #009e4d,
+    #009e4d,
+    #009e4d
+  );
 
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   background: linear-gradient(to right, #009e4d, #009e4d, #009e4d, #009e4d);
@@ -327,7 +334,7 @@ footer {
 
 @media (min-width: 769px) {
   .gradient-custom-2 {
-    border-top-right-radius: .3rem;
-    border-bottom-right-radius: .3rem;
+    border-top-right-radius: 0.3rem;
+    border-bottom-right-radius: 0.3rem;
   }
 }

@@ -12008,6 +12008,7 @@ footer {
   background-color: var(--bs-secondary-bg) !important;
   color: white;
   min-height: 550px;
+  overflow: hidden;
 }
 footer a:not(.fa):hover {
   text-decoration: underline !important;
@@ -12133,15 +12134,86 @@ footer figure img {
   width: calc(40px + 30 * (100vw - 360px) / 1240) !important;
 }
 
-/* Login Page CSS */
+#profile-modal .wrapper {
+  padding: 30px 50px !important;
+  border: 1px solid #c1c1c1 !important;
+  border-radius: 15px;
+  max-width: 600px;
+}
+#profile-modal .wrapper h4, #profile-modal .wrapper .h4 {
+  letter-spacing: -1px;
+  font-weight: 400;
+}
+#profile-modal .wrapper .img {
+  width: 70px;
+  height: 70px;
+  border-radius: 6px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+#profile-modal .wrapper #img-section p,
+#profile-modal .wrapper #deactivate p {
+  font-size: 12px;
+  color: #777;
+  margin-bottom: 10px;
+  text-align: justify;
+}
+#profile-modal .wrapper #img-section b,
+#profile-modal .wrapper #img-section button,
+#profile-modal .wrapper #deactivate b {
+  font-size: 14px;
+}
+#profile-modal .wrapper label {
+  margin-bottom: 0;
+  font-size: 14px;
+  font-weight: 500;
+  color: #777;
+  padding-left: 3px;
+}
+#profile-modal .wrapper .form-control {
+  border-radius: 10px;
+}
+#profile-modal .wrapper input[placeholder] {
+  font-weight: 500;
+}
+#profile-modal .wrapper .form-control:focus {
+  box-shadow: none;
+  border: 1.5px solid #0779e4;
+}
+#profile-modal .wrapper select {
+  display: block;
+  width: 100%;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  height: 40px;
+  padding: 5px 10px;
+  /* -webkit-appearance: none; */
+}
+#profile-modal .wrapper select:focus {
+  outline: none;
+}
+#profile-modal .wrapper .button {
+  background-color: #fff !important;
+  color: #0779e4 !important;
+}
+#profile-modal .wrapper .button:hover {
+  background-color: #0779e4 !important;
+  color: #fff !important;
+}
+#profile-modal .wrapper .danger {
+  background-color: #fff;
+  color: #e20404;
+  border: 1px solid #ddd;
+}
+#profile-modal .wrapper .danger:hover {
+  background-color: #e20404;
+  color: #fff;
+}
 
 .gradient-custom-2 {
   /* fallback for old browsers */
   background: #009e4d;
-
   /* Chrome 10-25, Safari 5.1-6 */
-  background: -webkit-linear-gradient(to right, #009e4d, #009e4d, #009e4d, #009e4d);
-
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   background: linear-gradient(to right, #009e4d, #009e4d, #009e4d, #009e4d);
 }
@@ -12151,10 +12223,9 @@ footer figure img {
     height: 100vh !important;
   }
 }
-
 @media (min-width: 769px) {
   .gradient-custom-2 {
-    border-top-right-radius: .3rem;
-    border-bottom-right-radius: .3rem;
+    border-top-right-radius: 0.3rem;
+    border-bottom-right-radius: 0.3rem;
   }
 }
