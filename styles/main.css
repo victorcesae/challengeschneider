@@ -11980,53 +11980,155 @@ textarea.form-control-lg {
   --bs-primary-border-subtle: #009530;
   --bs-primary-text-emphasis: #009530;
   --bs-secondary-color: #9fa0a4;
+  --bs-body-secondary-color: #ccc;
   --bs-secondary-color-rgb: #9fa0a4;
   --bs-secondary-bg: #626469;
   --bs-secondary-bg-rgb: #626469;
+  --bs-link-color-rgb: #9fa0a4;
+  --bs-link-hover-color-rgb: #626469;
 }
 
 body {
   min-height: 100vh;
-}
-
-main {
+  background-color: var(--bs-body-secondary-color);
   height: 100vh;
   max-height: 100vh;
   overflow-x: auto;
   overflow-y: hidden;
 }
-main .nav-pills {
+body a:hover {
+  text-decoration: underline !important;
+}
+body .nav-pills {
   --bs-nav-pills-link-active-bg: var(--bs-primary);
 }
-main .nav-pills .nav-link:not(.active):hover {
+body .nav-pills .nav-link:not(.active):hover {
   background-color: var(--bs-gray-200);
 }
 
-
-/*!
-Login Page CSS
- */
-
-.gradient-custom-2 {
-  /* fallback for old browsers */
-  background: #90fcc8;
-
-  /* Chrome 10-25, Safari 5.1-6 */
-  background: -webkit-linear-gradient(to right, #22690e8c, #d8ad36, #36dd8a, #45a5b4);
-
-  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  background: linear-gradient(to right, #22690e8c, #45a5b4);
+footer {
+  overflow-x: hidden !important;
+  background-color: var(--bs-secondary-bg) !important;
+  color: white;
+  min-height: 550px;
 }
-
-@media (min-width: 768px) {
-  .gradient-form {
-    height: 100vh !important;
-  }
+footer h5, footer .h5 {
+  font-size: calc(14px + 4 * (100vw - 360px) / 1240) !important;
 }
-
-@media (min-width: 769px) {
-  .gradient-custom-2 {
-    border-top-right-radius: .3rem;
-    border-bottom-right-radius: .3rem;
-  }
+footer button {
+  font-size: calc(13px + 3 * (100vw - 360px) / 1280) !important;
+  border-radius: 0 !important;
+  padding-left: calc(20px + 8 * (100vw - 360px) / 1240) !important;
+  padding-right: calc(20px + 8 * (100vw - 360px) / 1240) !important;
+  padding-top: calc(10px + 2 * (100vw - 360px) / 1240) !important;
+  padding-bottom: calc(10px + 2 * (100vw - 360px) / 1240) !important;
+  background-color: #383431 !important;
+  border: none !important;
+}
+footer button:focus {
+  box-shadow: none !important;
+  outline-width: 0;
+}
+footer li {
+  margin-top: 8px;
+  margin-bottom: 8px;
+  cursor: pointer;
+}
+footer input::-moz-placeholder {
+  vertical-align: middle !important;
+  text-align: center !important;
+  color: #42443e !important;
+  font-size: calc(12px + 2 * (100vw - 360px) / 1240) !important;
+}
+footer input::placeholder {
+  vertical-align: middle !important;
+  text-align: center !important;
+  color: #42443e !important;
+  font-size: calc(12px + 2 * (100vw - 360px) / 1240) !important;
+}
+footer input {
+  border-radius: 2px !important;
+  background: #fff !important;
+  color: #42443e !important;
+  border-color: #42443e !important;
+}
+footer input:focus {
+  box-shadow: none !important;
+  outline-width: 0;
+}
+footer img {
+  vertical-align: middle !important;
+  width: 100%;
+  width: calc(30px + 6 * (100vw - 320px) / 680) !important;
+}
+footer .list-header {
+  font-size: 18px !important;
+  font-weight: bold;
+  margin-bottom: 20px !important;
+  text-transform: uppercase;
+}
+footer small, footer .small {
+  font-size: calc(12px + 2 * (100vw - 360px) / 1240) !important;
+}
+footer p {
+  font-size: calc(10px + 2 * (100vw - 360px) / 1240) !important;
+}
+footer .social {
+  position: relative;
+  left: -10px;
+}
+footer .btn {
+  background-color: #42443e !important;
+}
+footer .fa {
+  background-color: #42443e !important;
+  padding: calc(6px + 2 * (100vw - 360px) / 1240) !important;
+  font-size: calc(14px + 1 * (100vw - 360px) / 1240) !important;
+  width: calc(23px + 7 * (100vw - 360px) / 1240) !important;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 0px !important;
+  margin: 5px 10px 5px 10px !important;
+  cursor: pointer;
+  color: #fff !important;
+}
+footer a {
+  text-decoration: none !important;
+}
+footer .line {
+  background-color: #ccc !important;
+  width: 92%;
+}
+footer a span {
+  font-size: calc(14px + -1 * (100vw - 360px) / 1240) !important;
+}
+footer .active-1 span:hover {
+  color: white !important;
+}
+footer .third-row {
+  background-color: white !important;
+  border-radius: 50px !important;
+  padding: 0.8vh 2.7vh 0.8vh 2.7vh;
+}
+footer .third-row li {
+  justify-content: space-between !important;
+  border-radius: 50px;
+  font-size: calc(9px + 3 * (100vw - 360px) / 1240) !important;
+}
+footer li.active-1 {
+  padding: 1.7vh !important;
+}
+footer .active-1 {
+  background-color: #42443e !important;
+  font-size: 2vw !important;
+  font-weight: bold;
+}
+footer figcaption {
+  font-size: calc(10px + 4 * (100vw - 360px) / 1240) !important;
+  text-align: center !important;
+  justify-content: center !important;
+  justify-self: center !important;
+}
+footer figure img {
+  width: calc(40px + 30 * (100vw - 360px) / 1240) !important;
 }

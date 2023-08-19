@@ -6,73 +6,50 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <link rel="stylesheet" href="styles/main.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
-<body>
-  <main class="d-flex flex-nowrap">
-    <div class="d-flex flex-column flex-shrink-0 p-3 bg-body-tertiary" style="width: 280px;">
+<body class="d-flex flex-nowrap align-items-start justify-content-start">
+  <div class="p-3 h-100 ">
+    <div class="d-flex flex-column flex-shrink-0 p-3 bg-body-tertiary h-100 rounded" style="width: 280px;">
       <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
-        <svg class="bi pe-none me-2" width="40" height="32">
-          <use xlink:href="#bootstrap"></use>
-        </svg>
         <span class="fs-4">Schneider</span>
       </a>
       <hr>
       <ul class="nav nav-pills flex-column mb-auto">
         <li class="nav-item">
           <a href="#" class="nav-link active" aria-current="page">
-            <svg class="bi pe-none me-2" width="16" height="16">
-              <use xlink:href="#home"></use>
-            </svg>
             Overview
           </a>
         </li>
         <li>
           <a href="#" class="nav-link link-body-emphasis">
-            <svg class="bi pe-none me-2" width="16" height="16">
-              <use xlink:href="#speedometer2"></use>
-            </svg>
             Quiz
           </a>
         </li>
         <li>
           <a href="./pages/assuntos_page.html" class="nav-link link-body-emphasis">
-            <svg class="bi pe-none me-2" width="16" height="16">
-              <use xlink:href="#table"></use>
-            </svg>
             Assuntos
           </a>
         </li>
         <hr>
         <li>
           <a href="#" class="nav-link link-body-emphasis">
-            <svg class="bi pe-none me-2" width="16" height="16">
-              <use xlink:href="#people-circle"></use>
-            </svg>
             Resultados
           </a>
         </li>
         <li>
           <a href="#" class="nav-link link-body-emphasis">
-            <svg class="bi pe-none me-2" width="16" height="16">
-              <use xlink:href="#grid"></use>
-            </svg>
             Criar Quiz
           </a>
         </li>
         <li>
           <a href="#" class="nav-link link-body-emphasis">
-            <svg class="bi pe-none me-2" width="16" height="16">
-              <use xlink:href="#grid"></use>
-            </svg>
             Criar Notificação
           </a>
         </li>
         <li>
           <a href="#" class="nav-link link-body-emphasis">
-            <svg class="bi pe-none me-2" width="16" height="16">
-              <use xlink:href="#grid"></use>
-            </svg>
             Configurações
           </a>
         </li>
@@ -94,6 +71,75 @@
         </ul>
       </div>
     </div>
+  </div>
+  <main
+    class="d-flex flex-column w-100 h-100 gap-2 overflow-y-auto overflow-x-hidden justify-content-between p-2 pb-3 pe-3">
+    <!-- START CONTEÚDO DO SITE-->
+    <div>
+    </div>
+    <!-- END CONTEÚDO DO SITE-->
+    <footer class="align-self-end w-100 rounded">
+      <div class="row  mb-0 mt-5 mx-4 justify-content-xl-around justify-content-sm-between">
+        <div class="col-xl-3 col-lg-6 col-md-6 col-sm-6 pt-4 order-1">
+          <ul class="list-unstyled">
+            <li class="mt-md-0 mt-4 list-header">LINKS RÁPIDOS</li>
+            <li><a href="https://www.se.com/br/pt/all-products">Todos os produtos</a></li>
+            <li><a href="https://www.se.com/br/pt/work/solutions/">Soluções</a></li>
+            <li><a href="https://www.se.com/br/pt/work/solutions/software/">Software</a></li>
+            <li><a href="https://www.se.com/br/pt/work/services/">+ Serviços de ciclo de vida</a></li>
+          </ul>
+        </div>
+        <div class="col-xl-3 col-lg-4 col-md-4 col-sm-6 pt-4 order-2">
+          <ul class="list-unstyled">
+            <li class="mt-md-0 mt-4 list-header">QUEM SOMOS</li>
+            <li><a href="https://www.se.com/br/pt/about-us/company-profile/">Perfil da empresa</a></li>
+            <li><a href="https://www.se.com/br/pt/about-us/careers/overview.jsp">Carreiras</a></li>
+            <li><a href="https://www.se.com/br/pt/about-us/newsroom/">Newsroom</a></li>
+            <li><a href="https://www.se.com/br/pt/about-us/sustainability/">Sustentabilidade</a></li>
+          </ul>
+        </div>
+        <div class="col-xl-auto col-lg-6  col-md-6 pt-4 col-sm-6 my-sm-0 order-md-3 order-sm-1 d-flex">
+          <ul class="list-unstyled">
+            <li class="mt-md-0 mt-4 list-header">SUPORTE</li>
+            <li><a href="https://www.se.com/br/pt/work/support/">Precisa de ajuda? Comece aqui</a></li>
+            <li><a href="https://www.se.com/br/pt/work/support/product-selector/">Seletor de Produto</a></li>
+            <li><a href="https://www.se.com/br/pt/download/">Documentação do produto e download de
+                softwares</a></li>
+            <li><a href="https://www.se.com/br/pt/faqs/home/">Pesquisar perguntas frequentes</a></li>
+
+            <li class="mt-md-0 mt-4 list-header">CONTATO</li>
+            <li><a class="text-decoration-none link-underline"
+                href="https://www.se.com/br/pt/work/support/contacts.jsp">Central de
+                contato</a></li>
+            <li><a href="https://www.se.com/br/pt/work/support/customer-care/contact-schneider-electric.jsp">Entrar em
+                contato com o suporte</a>
+            </li>
+            <li><a href="https://www.se.com/br/pt/work/support/customer-care/contact-sales.jsp">Faça um orçamento</a>
+            </li>
+            <li><a href="https://www.se.com/br/pt/locate/360-buscar-revendas-e-distribuidores">Onde comprar?</a></li>
+          </ul>
+        </div>
+        <div class="col-xl-auto text-left col-lg-4 col-md-4 col-sm-6 col-12 pt-4 my-sm-0 order-6 my-auto">
+          <ul class="list-unstyled">
+            <li>
+              <p class="mb-0 pb-0 mt-5">REDES SOCIAIS</p>
+            </li>
+            <li>
+              <a class="fa fa-facebook" href="https://www.facebook.com/SchneiderElectric?brandloc=DISABLE"></a>
+              <a class="fa fa-twitter" href="https://twitter.com/SchneiderElec"></a>
+              <a class="fa fa-instagram" href="https://instagram.com/schneiderelectric"></a>
+              <a class="fa fa-linkedin" href="https://www.linkedin.com/company/schneider-electric"></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <hr class="line">
+      <div class="row text-center py-3">
+        <div class="col">
+          <p class="text-muted"><b>ALL RIGHTS ARE RESERVED</b> </p>
+        </div>
+      </div>
+    </footer>
   </main>
   <script src="./js/bootstrap.bundle.min.js"></script>
 </body>
