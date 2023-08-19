@@ -33,6 +33,26 @@ document.addEventListener("DOMContentLoaded", (event) => {
     questionContainer.appendChild(questionElement);
   }
 
+  // Se o localStorage estiver vazio, cria um quiz padrão
+  if (quizzes.length === 0) {
+      const defaultQuiz = {
+          title: "Quiz de Ecologia",
+          questions: [{
+              questionText: "Qual é a maior floresta tropical do mundo?",
+              options: ["Floresta da Tasmânia", "Floresta Amazônica", "Floresta do Congo", "Floresta Boreal"],
+              correctAnswer: 1
+          },
+          {
+              questionText: "Qual destes não é um gás de efeito estufa?",
+              options: ["Oxigênio", "Dióxido de Carbono", "Metano", "Óxido Nitroso"],
+              correctAnswer: 0
+          }],
+          isActive: true
+      };
+      quizzes.push(defaultQuiz);
+      localStorage.setItem('quizzes', JSON.stringify(quizzes));
+  }
+
   function createQuiz(event) {
     event.preventDefault();
 
