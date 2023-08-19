@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="../styles/main.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body class="d-flex flex-nowrap align-items-start justify-content-start">
+  <!-- START SIDEBAR -->
+  <div class="p-3 h-100 ">
+    <div class="d-flex flex-column flex-shrink-0 p-3 bg-body-tertiary h-100 rounded" style="width: 280px;">
+      <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
+        <span class="fs-4">Schneider</span>
+      </a>
+      <hr>
+      <ul class="nav nav-pills flex-column mb-auto">
+        <li class="nav-item">
+          <a href="../index.html" class="nav-link active" aria-current="page">
+            Overview
+          </a>
+        </li>
+        <li>
+          <a href="#" class="nav-link link-body-emphasis">
+            Quiz
+          </a>
+        </li>
+        <li>
+          <a href="../pages/subject.html" class="nav-link link-body-emphasis">
+            Assuntos
+          </a>
+        </li>
+        <hr>
+        <li>
+          <a href="../pages/resultado.html" class="nav-link link-body-emphasis">
+            Resultados
+          </a>
+        </li>
+        <li>
+          <a href="#" class="nav-link link-body-emphasis">
+            Criar Quiz
+          </a>
+        </li>
+        <li>
+          <a href="#" class="nav-link link-body-emphasis">
+            Criar Notificação
+          </a>
+        </li>
+        <li>
+          <a href="#" class="nav-link link-body-emphasis">
+            Configurações
+          </a>
+        </li>
+      </ul>
+      <hr>
+      <div class="dropdown">
+        <a href="#" class="d-flex align-items-center link-body-emphasis text-decoration-none dropdown-toggle"
+          data-bs-toggle="dropdown" aria-expanded="false">
+          <img src="https://github.com/mdo.png" alt="" width="32" height="32" class="rounded-circle me-2">
+          <strong>John Doe</strong>
+        </a>
+        <ul class="dropdown-menu text-small shadow">
+          <li><a class="dropdown-item" href="#">Configurações</a></li>
+          <li><a class="dropdown-item" href="#">Perfil</a></li>
+          <li>
+            <hr class="dropdown-divider">
+          </li>
+          <li><a class="dropdown-item" href="#">Sair</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <!-- END SIDEBAR -->
+  <main class="d-flex flex-column w-100 h-100 gap-2 overflow-y-auto overflow-x-hidden justify-content-between p-3">
+    <!-- START CONTEÚDO DO SITE--- -->
+            <H1 class="text-success text-center ">Resultados</H1>
+
+        <div class="container">
+            <div class="row fs-1">
+              <div class="col text-center text-success"> 2 </div>
+              <div class="col text-center text-success"> 1 </div>
+              <div class="col text-center text-success"> 3 </div>
+              <div class="w-100"></div>
+              <div class="col text-center"><img src="../img/ranking2.jpg" alt="foto homem segundo lugar" width="100px" height="100px" class="rounded-circle border border-success"> <br> @JoãoFS</div>
+              <div class="col text-center"><img src="../img/ranking1.jpg" alt="foto mulher primeiro lugar" width="150px" height="150px" class="rounded-circle border border-success"> <br> @MariaMMM</div>
+              <div class="col text-center"><img src="../img/ranking3.jpg" alt="foto homem terceiro lugar" width="100px" height="100px" class="rounded-circle border border-success"> <br> @RoberrtoAN</div>
+            </div>
+          </div>
+          <table class="table table-secondary">
+            <thead>
+              <tr>
+                <th scope="col">#</th>
+                <th scope="col">Avatar</th>
+                <th scope="col">Nome</th>
+                <th scope="col">@</th>
+                <th scope="col">Pontuação</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">1</th>
+                <td><img src="../img/ranking1.jpg" width="30px" height="30px" class="rounded-circle border border-success"></td>
+                <td>Maria</td>
+                <td>@MariaMMM</td>
+                <td>874</td>
+              </tr>
+              <tr>
+                <th scope="row">2</th>
+                <td><img src="../img/ranking2.jpg" width="30px" height="30px" class="rounded-circle border border-success"></td>
+                <td>João</td>
+                <td>@JoãoFS</td>
+                <td>750</td>
+              </tr>
+              <tr>
+                <th scope="row">3</th>
+                <td><img src="../img/ranking3.jpg" width="30px" height="30px" class="rounded-circle border border-success"></td>
+                <td>Roberto</td>
+                <td>@RoberrtoAN</td>
+                <td>710</td>
+              </tr>
+              <tr>
+                <th scope="row">4</th>
+                <td><img src="https://avatars.githubusercontent.com/u/98681?v=4" width="30px" height="30px" class="rounded-circle border border-success"></td>
+                <td>John</td>
+                <td>@JohnDoe</td>
+                <td>695</td>
+              </tr>
+              <tr>
+                <th scope="row">5</th>
+                <td><img src="../img/ranking5.jpg" width="30px" height="30px" class="rounded-circle border border-success"></td>
+                <td>Paulo</td>
+                <td>@PauloFFS</td>
+                <td>655</td>
+              </tr>
+            </tbody>
+          </table>
+    </div>
+    <!-- END CONTEÚDO DO SITE-->
+    <!-- START FOOTER -->
+    <footer class="align-self-end w-100 rounded">
+      <div class="row  mb-0 mt-5 mx-4 justify-content-xl-around justify-content-sm-between">
+        <div class="col-xl-3 col-lg-6 col-md-6 col-sm-6 pt-4 order-1">
+          <ul class="list-unstyled">
+            <li class="mt-md-0 mt-4 list-header">LINKS RÁPIDOS</li>
+            <li><a href="https://www.se.com/br/pt/all-products">Todos os produtos</a></li>
+            <li><a href="https://www.se.com/br/pt/work/solutions/">Soluções</a></li>
+            <li><a href="https://www.se.com/br/pt/work/solutions/software/">Software</a></li>
+            <li><a href="https://www.se.com/br/pt/work/services/">+ Serviços de ciclo de vida</a></li>
+          </ul>
+        </div>
+        <div class="col-xl-3 col-lg-4 col-md-4 col-sm-6 pt-4 order-2">
+          <ul class="list-unstyled">
+            <li class="mt-md-0 mt-4 list-header">QUEM SOMOS</li>
+            <li><a href="https://www.se.com/br/pt/about-us/company-profile/">Perfil da empresa</a></li>
+            <li><a href="https://www.se.com/br/pt/about-us/careers/overview.jsp">Carreiras</a></li>
+            <li><a href="https://www.se.com/br/pt/about-us/newsroom/">Newsroom</a></li>
+            <li><a href="https://www.se.com/br/pt/about-us/sustainability/">Sustentabilidade</a></li>
+          </ul>
+        </div>
+        <div class="col-xl-auto col-lg-6  col-md-6 pt-4 col-sm-6 my-sm-0 order-md-3 order-sm-1 d-flex">
+          <ul class="list-unstyled">
+            <li class="mt-md-0 mt-4 list-header">SUPORTE</li>
+            <li><a href="https://www.se.com/br/pt/work/support/">Precisa de ajuda? Comece aqui</a></li>
+            <li><a href="https://www.se.com/br/pt/work/support/product-selector/">Seletor de Produto</a></li>
+            <li><a href="https://www.se.com/br/pt/download/">Documentação do produto e download de
+                softwares</a></li>
+            <li><a href="https://www.se.com/br/pt/faqs/home/">Pesquisar perguntas frequentes</a></li>
+
+            <li class="mt-md-0 mt-4 list-header">CONTATO</li>
+            <li><a class="text-decoration-none link-underline"
+                href="https://www.se.com/br/pt/work/support/contacts.jsp">Central de
+                contato</a></li>
+            <li><a href="https://www.se.com/br/pt/work/support/customer-care/contact-schneider-electric.jsp">Entrar em
+                contato com o suporte</a>
+            </li>
+            <li><a href="https://www.se.com/br/pt/work/support/customer-care/contact-sales.jsp">Faça um orçamento</a>
+            </li>
+            <li><a href="https://www.se.com/br/pt/locate/360-buscar-revendas-e-distribuidores">Onde comprar?</a></li>
+          </ul>
+        </div>
+        <div class="col-xl-auto text-left col-lg-4 col-md-4 col-sm-6 col-12 pt-4 my-sm-0 order-6 my-auto">
+          <ul class="list-unstyled">
+            <li>
+              <p class="mb-0 pb-0 mt-5">REDES SOCIAIS</p>
+            </li>
+            <li>
+              <a class="fa fa-facebook" href="https://www.facebook.com/SchneiderElectric?brandloc=DISABLE"></a>
+              <a class="fa fa-twitter" href="https://twitter.com/SchneiderElec"></a>
+              <a class="fa fa-instagram" href="https://instagram.com/schneiderelectric"></a>
+              <a class="fa fa-linkedin" href="https://www.linkedin.com/company/schneider-electric"></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <hr class="line">
+      <div class="row text-center py-3">
+        <div class="col">
+          <p class="text-muted"><b>ALL RIGHTS ARE RESERVED</b> </p>
+        </div>
+      </div>
+    </footer>
+    <!-- END FOOTER -->
+  </main>
+  <script src="../js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
