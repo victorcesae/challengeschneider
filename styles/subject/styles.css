@@ -4,17 +4,8 @@
   box-sizing: border-box;
 }
 
-body {
-  padding-top: 40px;
-  background-color: #ccc;
-}
-@media (max-width: 768px) {
-  body {
-    padding: 20px;
-  }
-}
-body ul {
-  padding-left: 0;
+ul {
+  padding-left: 0 !important;
 }
 
 .container {
@@ -71,7 +62,6 @@ body ul {
   padding: 40px 40px 0 40px;
   background-color: #fff;
   border-radius: 15px;
-  margin-bottom: 30px;
 }
 .post__avatar img {
   width: 40px;
@@ -149,7 +139,7 @@ body ul {
   border: 1px solid #ccc;
 }
 .publicacao__input input:hover {
-  background-color: #DDDDDD;
+  background-color: #dddddd;
   cursor: pointer;
 }
 
@@ -158,7 +148,7 @@ body ul {
 }
 
 .highlight-on-hover:hover {
-  background-color: #DDDDDD;
+  background-color: #dddddd;
   cursor: pointer;
   border-radius: 10px;
 }
