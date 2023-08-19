@@ -8,6 +8,10 @@ body {
     @media (max-width: 768px) {
         padding: 20px;
     }
+
+    ul {
+        padding-left: 0;
+    }
 }
 
 .container {
@@ -113,11 +117,11 @@ body {
     &__buttons {
         width: 50%;
 
-        button {
+        label {
             background-color: transparent;
             border: transparent;
-            color: #ccc;
             cursor: pointer;
+            margin: 0 10px;
         }
     }
 }
@@ -138,18 +142,14 @@ body {
         display: flex;
         justify-content: center;
 
-
-
         li {
+            margin-top: 10px;
             padding: 20px;
         }
 
         .margin {
-            margin: 0 50px;
+            margin: 10px 40px 0px 40px;
 
-            @media (max-width: 768px) {
-                margin: 0;
-            }
         }
     }
 
@@ -168,5 +168,31 @@ body {
             border-radius: 20px;
             border: 1px solid #ccc;
         }
+
+        input:hover {
+            background-color: #DDDDDD;
+            cursor: pointer;
+
+        }
     }
+}
+
+.highlight-on-hover {
+    transition: 0.5s ease;
+}
+
+
+.highlight-on-hover:hover {
+    background-color: #DDDDDD;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.circle {
+    width: 5px;
+    height: 5px;
+    background-color: black;
+    border-radius: 50%;
+    display: inline-block;
+    margin-right: 5px;
 }

@@ -1,3 +1,22 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  padding-top: 40px;
+  background-color: #ccc;
+}
+@media (max-width: 768px) {
+  body {
+    padding: 20px;
+  }
+}
+body ul {
+  padding-left: 0;
+}
+
 .container {
   max-width: 1220px;
   width: 100%;
@@ -5,7 +24,7 @@
   display: grid;
   grid-template-columns: 200px auto 200px;
   -moz-column-gap: 56px;
-  column-gap: 56px;
+       column-gap: 56px;
 }
 @media (max-width: 768px) {
   .container {
@@ -52,6 +71,7 @@
   padding: 40px 40px 0 40px;
   background-color: #fff;
   border-radius: 15px;
+  margin-bottom: 30px;
 }
 .post__avatar img {
   width: 40px;
@@ -83,11 +103,11 @@
 .post__buttons {
   width: 50%;
 }
-.post__buttons button {
+.post__buttons label {
   background-color: transparent;
   border: transparent;
-  color: #ccc;
   cursor: pointer;
+  margin: 0 10px;
 }
 
 .publicacao {
@@ -95,6 +115,7 @@
   flex-direction: column;
   background-color: #fff;
   border-radius: 10px;
+  margin-bottom: 20px;
 }
 @media (max-width: 768px) {
   .publicacao {
@@ -107,15 +128,11 @@
   justify-content: center;
 }
 .publicacao ul li {
+  margin-top: 10px;
   padding: 20px;
 }
 .publicacao ul .margin {
-  margin: 0 50px;
-}
-@media (max-width: 768px) {
-  .publicacao ul .margin {
-    margin: 0;
-  }
+  margin: 10px 40px 0px 40px;
 }
 .publicacao__container {
   padding: 20px 40px;
@@ -131,3 +148,26 @@
   border-radius: 20px;
   border: 1px solid #ccc;
 }
+.publicacao__input input:hover {
+  background-color: #DDDDDD;
+  cursor: pointer;
+}
+
+.highlight-on-hover {
+  transition: 0.5s ease;
+}
+
+.highlight-on-hover:hover {
+  background-color: #DDDDDD;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+.circle {
+  width: 5px;
+  height: 5px;
+  background-color: black;
+  border-radius: 50%;
+  display: inline-block;
+  margin-right: 5px;
+}/*# sourceMappingURL=styles.css.map */
