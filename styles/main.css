@@ -12133,17 +12133,17 @@ footer figure img {
   width: calc(40px + 30 * (100vw - 360px) / 1240) !important;
 }
 
-/* Login Pace CSS */
+/* Login Page CSS */
 
 .gradient-custom-2 {
   /* fallback for old browsers */
-  background: #fccb90;
+  background: #009e4d;
 
   /* Chrome 10-25, Safari 5.1-6 */
-  background: -webkit-linear-gradient(to right, #ee7724, #d8363a, #dd3675, #b44593);
+  background: -webkit-linear-gradient(to right, #009e4d, #009e4d, #009e4d, #009e4d);
 
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  background: linear-gradient(to right, #ee7724, #d8363a, #dd3675, #b44593);
+  background: linear-gradient(to right, #009e4d, #009e4d, #009e4d, #009e4d);
 }
 
 @media (min-width: 768px) {
