@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
-  <link rel="stylesheet" href="styles/main.css">
+  <link rel="stylesheet" href="../styles/main.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
@@ -19,28 +19,28 @@
       <hr>
       <ul class="nav nav-pills flex-column mb-auto">
         <li class="nav-item">
-          <a href="./index.html" class="nav-link active" aria-current="page">
+          <a href="../index.html" class="nav-link link-body-emphasis">
             Overview
           </a>
         </li>
         <li>
-          <a href="./pages/user_quiz.html" class="nav-link link-body-emphasis">
+          <a href="../pages/user_quiz.html" class="nav-link link-body-emphasis">
             Quiz
           </a>
         </li>
         <li>
-          <a href="./pages/subject.html" class="nav-link link-body-emphasis">
+          <a href="../pages/subject.html" class="nav-link link-body-emphasis">
             Assuntos
           </a>
         </li>
         <hr>
         <li>
-          <a href="./pages/result.html" class="nav-link link-body-emphasis">
+          <a href="../pages/result.html" class="nav-link active" aria-current="page">
             Resultados
           </a>
         </li>
         <li>
-          <a href="./pages/quiz_manager.html" class="nav-link link-body-emphasis">
+          <a href="../pages/quiz_manager.html" class="nav-link link-body-emphasis">
             Criar Quiz
           </a>
         </li>
@@ -65,7 +65,8 @@
         <ul class="dropdown-menu text-small shadow">
 
           <li><button class="dropdown-item" type="button" data-bs-toggle="modal"
-              data-bs-target="#profile-modal">Perfil</button></li>
+              data-bs-target="#profile-modal">Perfil</button>
+          </li>
           <li>
             <hr class="dropdown-divider">
           </li>
@@ -77,10 +78,77 @@
   <!-- END SIDEBAR -->
   <main class="d-flex flex-column w-100 h-100 gap-2 overflow-y-auto overflow-x-hidden justify-content-between p-3">
     <!-- START CONTEÚDO DO SITE ---ALTERE APENAS AQUI--- -->
-    <div>
+    <h1 class="text-success text-center ">Resultados</h1>
+
+    <div class="container">
+      <div class="row fs-1">
+        <div class="col text-center text-success"> 2 </div>
+        <div class="col text-center text-success"> 1 </div>
+        <div class="col text-center text-success"> 3 </div>
+        <div class="w-100"></div>
+        <div class="col text-center"><img src="../img/ranking2.jpg" alt="foto homem segundo lugar" width="100px"
+            height="100px" class="rounded-circle border border-success"> <br> @JoãoFS</div>
+        <div class="col text-center"><img src="../img/ranking1.jpg" alt="foto mulher primeiro lugar" width="150px"
+            height="150px" class="rounded-circle border border-success"> <br> @MariaMMM</div>
+        <div class="col text-center"><img src="../img/ranking3.jpg" alt="foto homem terceiro lugar" width="100px"
+            height="100px" class="rounded-circle border border-success"> <br> @RoberrtoAN</div>
+      </div>
+    </div>
+    <table class="table table-secondary">
+      <thead>
+        <tr>
+          <th scope="col">#</th>
+          <th scope="col">Avatar</th>
+          <th scope="col">Nome</th>
+          <th scope="col">@</th>
+          <th scope="col">Pontuação</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">1</th>
+          <td><img src="../img/ranking1.jpg" width="30px" height="30px" class="rounded-circle border border-success">
+          </td>
+          <td>Maria</td>
+          <td>@MariaMMM</td>
+          <td>874</td>
+        </tr>
+        <tr>
+          <th scope="row">2</th>
+          <td><img src="../img/ranking2.jpg" width="30px" height="30px" class="rounded-circle border border-success">
+          </td>
+          <td>João</td>
+          <td>@JoãoFS</td>
+          <td>750</td>
+        </tr>
+        <tr>
+          <th scope="row">3</th>
+          <td><img src="../img/ranking3.jpg" width="30px" height="30px" class="rounded-circle border border-success">
+          </td>
+          <td>Roberto</td>
+          <td>@RoberrtoAN</td>
+          <td>710</td>
+        </tr>
+        <tr>
+          <th scope="row">4</th>
+          <td><img src="https://avatars.githubusercontent.com/u/98681?v=4" width="30px" height="30px"
+              class="rounded-circle border border-success"></td>
+          <td>John</td>
+          <td>@JohnDoe</td>
+          <td>695</td>
+        </tr>
+        <tr>
+          <th scope="row">5</th>
+          <td><img src="../img/ranking5.jpg" width="30px" height="30px" class="rounded-circle border border-success">
+          </td>
+          <td>Paulo</td>
+          <td>@PauloFFS</td>
+          <td>655</td>
+        </tr>
+      </tbody>
+    </table>
     </div>
     <!-- END CONTEÚDO DO SITE-->
-
     <!-- START FOOTER -->
     <footer class="align-self-end w-100 rounded">
       <div class="row  mb-0 mt-5 mx-4 justify-content-xl-around justify-content-sm-between">
@@ -146,6 +214,7 @@
     </footer>
     <!-- END FOOTER -->
   </main>
+
   <div id="profile-modal" class="modal" tabindex="-1">
     <div class="modal-dialog modal-dialog-centered">
       <div class="modal-content wrapper bg-white p-2 rounded border">
@@ -208,7 +277,7 @@
       </div>
     </div>
   </div>
-  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="../js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>
